@@ -14,6 +14,7 @@
 		04DEB8E51A8111B800FCA08A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DEB8E41A8111B800FCA08A /* Images.xcassets */; };
 		04DEB8E81A8111B800FCA08A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DEB8E61A8111B800FCA08A /* LaunchScreen.xib */; };
 		04DEB8F41A8111B800FCA08A /* FriendlyFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DEB8F31A8111B800FCA08A /* FriendlyFormatterTests.m */; };
+		04DEB9001A8115F000FCA08A /* NSDate+FriendlyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DEB8FF1A8115F000FCA08A /* NSDate+FriendlyFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		04DEB8ED1A8111B800FCA08A /* FriendlyFormatterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendlyFormatterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DEB8F21A8111B800FCA08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DEB8F31A8111B800FCA08A /* FriendlyFormatterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendlyFormatterTests.m; sourceTree = "<group>"; };
+		04DEB8FE1A8115F000FCA08A /* NSDate+FriendlyFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FriendlyFormatter.h"; sourceTree = "<group>"; };
+		04DEB8FF1A8115F000FCA08A /* NSDate+FriendlyFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FriendlyFormatter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		04DEB8D61A8111B700FCA08A /* FriendlyFormatter */ = {
 			isa = PBXGroup;
 			children = (
+				04DEB8FD1A8114F700FCA08A /* classes */,
 				04DEB8DB1A8111B700FCA08A /* AppDelegate.h */,
 				04DEB8DC1A8111B700FCA08A /* AppDelegate.m */,
 				04DEB8DE1A8111B700FCA08A /* ViewController.h */,
@@ -117,6 +121,15 @@
 				04DEB8F21A8111B800FCA08A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DEB8FD1A8114F700FCA08A /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				04DEB8FE1A8115F000FCA08A /* NSDate+FriendlyFormatter.h */,
+				04DEB8FF1A8115F000FCA08A /* NSDate+FriendlyFormatter.m */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DEB9001A8115F000FCA08A /* NSDate+FriendlyFormatter.m in Sources */,
 				04DEB8E01A8111B700FCA08A /* ViewController.m in Sources */,
 				04DEB8DD1A8111B700FCA08A /* AppDelegate.m in Sources */,
 				04DEB8DA1A8111B700FCA08A /* main.m in Sources */,
@@ -412,6 +426,7 @@
 				04DEB8F91A8111B800FCA08A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DEB8FA1A8111B800FCA08A /* Build configuration list for PBXNativeTarget "FriendlyFormatterTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				04DEB8FC1A8111B800FCA08A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
